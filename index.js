@@ -1,5 +1,5 @@
-var {movies, createMovie, addMovie, getMovieById, changeStatus, 
-   listarTodosOsFilmes, listarTodosOsFilmes, listarFilmesEmCartaz} = require('./cinema');
+var {movies, createMovie, addMovie, getMovieById, changeStatus, listarFilmesEmCartaz, 
+   listarFilmesDeLongaDuracao} = require('./cinema');
 
  /*
  const newMovie = {
@@ -10,14 +10,13 @@ var {movies, createMovie, addMovie, getMovieById, changeStatus,
     anoDeLancamento: 2021,
     emCartaz: false,
  }
- */
+ 
 
-// criando novo objeto de movie
-let newMovie = createMovie(03, "Space Jam", 203, 
-["Lebrom James", "Damian Lillard", "Anthony Davis"], 2021, true);
-addMovie(newMovie);
-console.log('--------------------------------------------')
-//console.log(movies);
+// OUTRO MODO DE DECLARAR O NEWMOVIE
+
+//let newMovie = createMovie(03, "Space Jam", 203, 
+//["Lebrom James", "Damian Lillard", "Anthony Davis"], 2021, true);
+//addMovie(newMovie);
 
 // alterando status
 changeStatus(3);
@@ -26,8 +25,15 @@ console.log('--------------------------------------------')
 
 // obtendo objeto de movie pelo id
 let pesquisa = getMovieById(02);
-//console.log(pesquisa)
+console.log(pesquisa)
 
-listarTodosOsFilmes( );
 
-listarFilmesEmCartaz( );
+console.log(movies);
+*/
+console.log('--------------------------------------------')
+
+listarFilmesEmCartaz( )
+
+/* EM CONSTRUÇÃO 
+console.log(listarFilmesDeLongaDuracao)
+*/
